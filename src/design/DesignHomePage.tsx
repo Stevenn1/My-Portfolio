@@ -6,7 +6,7 @@ export const Container = styled.div`
   display: flex;
   flex-direction: column;
   width: 100vw;
-  min-height: 100vh;
+  min-height: 1000px;
   align-items: stretch;
   opacity: 0;
   transition: opacity 1s ease-in-out;
@@ -22,12 +22,21 @@ export const Content = styled.div`
   background-color: #191919;
   flex-grow: 2;
   padding: 0;
+
+  @media screen and (max-width: 999px) {
+    display: flex;
+    flex-direction: column;
+  }
 `;
 
 export const FirstIntro = styled.div`
+  display: inline-block;
   position: absolute;
   left: 20%;
-  width: 800px;
+
+  @media screen and (max-width: 999px) {
+    left: 10%;
+  }
 `;
 
 export const Part1 = styled.div`
@@ -58,6 +67,11 @@ export const MenuIcon = styled.div`
 export const Image = styled.img`
   width: 50%;
   min-height: 100vh;
+
+  @media screen and (max-width: 999px) {
+    width: 100%;
+    margin-top: 100px;
+  }
 `;
 
 export const Title = styled.h1`
@@ -67,6 +81,13 @@ export const Title = styled.h1`
     Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   margin-top: 0;
   margin-bottom: 0;
+
+  @media screen and (max-width: 679px) {
+    margin-top: 150px;
+    display: flex;
+    width: 300px;
+    font-size: 30px;
+  }
 `;
 
 export const Title2 = styled.h2`
@@ -80,6 +101,27 @@ export const Presentation = styled.div`
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
     Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   color: #ffffff;
+
+  @media screen and (max-width: 1000px) {
+    display: flex;
+    width: 550px;
+  }
+
+  @media screen and (min-width: 680px) and (max-width: 1024px) {
+    display: flex;
+    width: 550px;
+  }
+
+  @media screen and (max-width: 679px) {
+    display: flex;
+    width: 400px;
+    padding-right: 100px;
+  }
+  @media screen and (max-width: 550px) {
+    display: flex;
+    width: 300px;
+    padding-right: 100px;
+  }
 `;
 
 export const Arrow = styled.div`
