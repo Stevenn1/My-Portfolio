@@ -31,6 +31,7 @@ export const Content = styled.div`
 
 export const FirstIntro = styled.div`
   display: inline-block;
+  max-width: 800px;
   position: absolute;
   left: 20%;
 
@@ -54,14 +55,6 @@ export const Logo = styled.div`
   margin-top: 20px;
   width: 60px;
   height: 60px;
-`;
-
-export const MenuIcon = styled.div`
-  position: absolute;
-  top: 10px;
-  right: 10px;
-  fill: white;
-  stroke: white;
 `;
 
 export const Image = styled.img`
@@ -121,6 +114,7 @@ export const Presentation = styled.div`
     display: flex;
     width: 300px;
     padding-right: 100px;
+    text-align: center;
   }
 `;
 
