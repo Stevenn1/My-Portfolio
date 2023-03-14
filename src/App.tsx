@@ -1,26 +1,18 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { ReactElement, useState } from "react";
+import Home from "./pages/Home";
+import MyProject from "./pages/MyProject";
+import Contact from "./pages/Contact";
+import "./css/contact.css";
+import { Routes, Route } from "react-router-dom";
 
-function App() {
+export default function App(): ReactElement {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/My-Project" element={<MyProject />} />
+        <Route path="/contact" element={<Contact />} />
+      </Routes>
+    </>
   );
 }
-
-export default App;
