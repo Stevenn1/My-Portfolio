@@ -34,8 +34,23 @@ p {
   margin: 0 auto;
   background: linear-gradient(180deg, #ffffff80 0%, #413f3f 100%);
   box-shadow: rgba(172, 177, 176, 0.378) 0px 48px 100px 0px;
+
 }
 
+.contactPage {
+  display: flex;
+  flex-direction: column;
+  border: 0px #ddd;
+  border-radius: 3px;
+  color: #ffffff;
+  padding: 20px;
+  width: 500px;
+  max-height: 900px;
+  margin: 0 auto;
+  background: linear-gradient(180deg, #ffffff80 0%, #413f3f 100%);
+  box-shadow: rgba(172, 177, 176, 0.378) 0px 48px 100px 0px;
+
+}
 
 .names {
   display: flex;
@@ -136,3 +151,34 @@ input::-ms-input-placeholder {
   font-weight: bolder;
   margin-bottom: 0;
 }
+
+@media screen and (max-width: 1205px) {
+  .contactPage{
+  display: flex;
+  flex-direction: column;
+  width: 340px;
+  margin: 0;
+}
+}
+
+@media screen and (max-width: 1205px) {
+  input[type="text"] {
+    width: 150px;
+    margin-bottom: 10px;
+  }
+  input[type="email"] {
+    width: 300px;
+  }
+  input[type="checkbox"] {
+    margin: 0 10px 0 0;
+  }
+}
+
+/* a travailler */
+@media screen and (max-width: 1205px) {
+  .LayoutRgpd {
+    width:300px
+  }
+}
+
+

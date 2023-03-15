@@ -21,12 +21,21 @@ export const StyledPart1 = styled(Part1)`
   margin-top: 180px;
   padding-bottom: 150px;
   height: 100vh;
+
+  @media screen and (max-width: 1205px) {
+    display: flex;
+  }
 `;
 
 const CenteredContent = styled(Content)`
   display: flex;
   align-items: center;
   justify-content: center;
+
+  @media screen and (max-width: 1205px) {
+    display: flex;
+    flex-direction: column;
+  }
 `;
 
 export const ContainerlogoHome = styled.div`
@@ -38,6 +47,25 @@ export const ContainerlogoHome = styled.div`
   &:hover {
     fill: #99e1d9;
     transform: scale(1.2);
+  }
+
+  @media screen and (max-width: 1205px) {
+    margin: 0 0 0 40px;
+  }
+`;
+
+const ContainerNavContact = styled(ContainerNav)`
+  @media screen and (max-width: 1205px) {
+    width: 340px;
+    display: flex;
+    justify-content: flex-start;
+  }
+
+  @media screen and (max-width: 430px) {
+    width: 200px;
+    display: flex;
+    justify-content: space-between !important;
+    margin-left: 0px;
   }
 `;
 
@@ -64,7 +92,7 @@ export default function Contact(): ReactElement {
               <Form />
             </div>
           </div>
-          <ContainerNav>
+          <ContainerNavContact>
             <StyledNavLink onClick={handleClick} to="/My-Project">
               <ContainerArrowLeft>
                 <ArrowLeft>
@@ -106,7 +134,7 @@ export default function Contact(): ReactElement {
                 </svg>
               </ContainerlogoHome>
             </StyledNavLink>
-          </ContainerNav>
+          </ContainerNavContact>
         </StyledPart1>
         <Image src="/1.jpg" alt="" />
       </CenteredContent>
