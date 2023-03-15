@@ -12,6 +12,7 @@ import {
   Presentation,
   Arrow,
   Joint,
+  Headband,
   StyledNavLink,
 } from "../design/DesignHomePage";
 
@@ -50,7 +51,7 @@ export default function Home(): ReactElement {
       <Logo>
         <img src="/sm.png" alt="" width="60" />
       </Logo>
-
+      <Headband src="/ban4.jpg" alt=""></Headband>
       <Content>
         <Part1>
           <FirstIntro>

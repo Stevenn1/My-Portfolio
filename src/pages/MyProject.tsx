@@ -5,6 +5,7 @@ import {
   Image,
   Title,
   Title2,
+  Headband,
   StyledNavLink,
 } from "../design/DesignHomePage";
 import { Part1, Content } from "../design/DesignMyProjectPage";
@@ -238,6 +239,12 @@ export const TextArrow = styled(MyTextProject)`
   }
 `;
 
+const ImageProjectPage = styled(Image)`
+  @media screen and (max-width: 1340px) {
+    display: none;
+  }
+`;
+
 export default function MyProject(): ReactElement {
   const [loaded, setLoaded] = useState(false);
 
@@ -250,7 +257,6 @@ export default function MyProject(): ReactElement {
       <Logo>
         <img src="/sm.png" alt="" width="60" />
       </Logo>
-
       <Content>
         <Part1>
           <StyledTitle className="card-title">Mes Projets</StyledTitle>
@@ -378,7 +384,7 @@ export default function MyProject(): ReactElement {
             </MyTextProject>
           </ContainerOutro>
         </Part1>
-        <Image src="/grow.jpg" alt="" />
+        <ImageProjectPage src="/urban.jpg" alt="" />
       </Content>
     </Container>
   );

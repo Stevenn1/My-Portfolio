@@ -64,6 +64,7 @@ export const Image = styled.img`
   @media screen and (max-width: 999px) {
     width: 100%;
     margin-top: 100px;
+    display: none;
   }
 `;
 
@@ -143,5 +144,13 @@ export const StyledNavLink = styled(NavLink)`
   color: #ffffff;
   &:hover {
     color: #99e1d9;
+  }
+`;
+
+export const Headband = styled.img`
+  display: none;
+
+  @media screen and (max-width: 999px) {
+    display: block;
   }
 `;
