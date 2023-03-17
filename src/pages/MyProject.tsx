@@ -9,6 +9,7 @@ import {
 } from "../design/DesignHomePage";
 import { Part1, Content } from "../design/DesignMyProjectPage";
 import ConfidentialLink from "../components/ConfidentialLink";
+import { NavLink } from "react-router-dom";
 import styled from "styled-components";
 
 export const handleClick = () => {
@@ -133,6 +134,10 @@ export const CardButton = styled.button`
     box-shadow: 0 15px 15px rgba(0, 0, 0, 0.16);
     transform: translate(0, -5px);
   }
+`;
+
+const NavLinkCustom = styled(NavLink)`
+  width: 100%;
 `;
 
 export const Description = styled.p`
@@ -262,7 +267,7 @@ export default function MyProject(): ReactElement {
   return (
     <Container className={loaded ? "loaded" : ""}>
       <Logo>
-        <img src="/sm.png" alt="" width="60" />
+        <img src="/MS.png" alt="" width="60" />
       </Logo>
       <Content>
         <Part1>
@@ -271,27 +276,27 @@ export default function MyProject(): ReactElement {
 
           <ContentCards>
             <Card>
-              <CardHeader src="/dev1.jpg" alt="" />
-              <CardTitle2>Project 1</CardTitle2>
+              <CardHeader src="/SiteAbdouAvocat.png" alt="" />
+              <CardTitle2>Cabinet d'avocat</CardTitle2>
               <Description>
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                Quisquam enim sunt facere fuga tempore voluptatem dolores ipsum.
-                Libero molestias esse, repudiandae voluptatibus aspernatur et
-                dolorem cumque quaerat. Rem, inventore maiores! lorem
+                Création d'un site web pour un avocat comprenant un blog pour
+                partager des articles juridiques, un système de connexion
+                sécurisé pour les utilisateurs, une page pour la prise de
+                rendez-vous et une page contact pour que les visiteurs puissent
+                facilement entrer en contact avec l'avocat.
               </Description>
               <CardFieldset>
-                <CardButton type="button">GitHub</CardButton>
+                <NavLinkCustom to="https://github.com/Stevenn1/Site-Portfolio-Cabinet-Avocat">
+                  <CardButton type="button">GitHub</CardButton>
+                </NavLinkCustom>
               </CardFieldset>
             </Card>
 
             <Card2>
               <CardHeader src="dev3.jpg" alt="" />
-              <CardTitle2>Project 2</CardTitle2>
+              <CardTitle2>Projet en Développement</CardTitle2>
               <Description>
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                Quisquam enim sunt facere fuga tempore voluptatem dolores ipsum.
-                Libero molestias esse, repudiandae voluptatibus aspernatur et
-                dolorem cumque quaerat. Rem, inventore maiores! lorem
+                En cours de Création... <br /> Disponible Bientôt
               </Description>
               <CardFieldset>
                 <CardButton type="button">GitHub</CardButton>

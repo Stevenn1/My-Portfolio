@@ -95,7 +95,7 @@ export default function Contact(): ReactElement {
   return (
     <Container className={loaded ? "loaded" : ""}>
       <Logo>
-        <img src="/sm.png" alt="" width="60" />
+        <img src="/MS.png" alt="" width="60" />
       </Logo>
 
       <CenteredContent>
