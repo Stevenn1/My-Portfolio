@@ -1,11 +1,13 @@
 h1 {
   color: #99e1d9;
   margin-bottom: 0;
+  text-align: center;
 }
 
 h2 {
   color: #ffffff;
   margin-bottom: 60px;
+  text-align: center;
 }
 
 h3 {
@@ -34,22 +36,6 @@ p {
   margin: 0 auto;
   background: linear-gradient(180deg, #ffffff80 0%, #413f3f 100%);
   box-shadow: rgba(172, 177, 176, 0.378) 0px 48px 100px 0px;
-
-}
-
-.contactPage {
-  display: flex;
-  flex-direction: column;
-  border: 0px #ddd;
-  border-radius: 3px;
-  color: #ffffff;
-  padding: 20px;
-  width: 500px;
-  max-height: 900px;
-  margin: 0 auto;
-  background: linear-gradient(180deg, #ffffff80 0%, #413f3f 100%);
-  box-shadow: rgba(172, 177, 176, 0.378) 0px 48px 100px 0px;
-
 }
 
 .names {
@@ -143,7 +129,6 @@ input::-ms-input-placeholder {
 
 ::placeholder {
   color: #f2f2f2;
-  text-align: center;
 }
 
 .error {
@@ -156,10 +141,25 @@ input::-ms-input-placeholder {
   .contactPage{
   display: flex;
   flex-direction: column;
-  width: 340px;
+  width: 500px;
   margin: 0;
 }
 }
+
+@media screen and (max-width: 620px) {
+  .contactPage{
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  margin: 0;
+}
+}
+
+
+  input[type="text"]::placeholder,input[type="email"]::placeholder  {
+    text-align: center;
+  }
+
 
 @media screen and (max-width: 1205px) {
   input[type="text"] {
@@ -172,6 +172,19 @@ input::-ms-input-placeholder {
   input[type="checkbox"] {
     margin: 0 10px 0 0;
   }
+}
+
+@media screen and (max-width: 620px) {
+  input[type="text"]{
+  width:145px;
+}
+}
+
+
+@media screen and (max-width: 430px) {
+  ::placeholder{
+color:transparent;
+}
 }
 
 /* a travailler */

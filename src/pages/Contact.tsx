@@ -1,6 +1,7 @@
 import React, { ReactElement, useState, useEffect } from "react";
 import styled from "styled-components";
 import Form from "../components/Form";
+import ConfidentialLink from "../components/ConfidentialLink";
 import { handleClick } from "./MyProject";
 import {
   Container,
@@ -18,8 +19,8 @@ import {
 } from "../pages/MyProject";
 
 export const StyledPart1 = styled(Part1)`
-  margin-top: 180px;
-  padding-bottom: 150px;
+  margin-top: 350px;
+  padding-bottom: 200px;
   height: 100vh;
 
   @media screen and (max-width: 1205px) {
@@ -31,6 +32,7 @@ const CenteredContent = styled(Content)`
   display: flex;
   align-items: center;
   justify-content: center;
+  overflow: auto;
 
   @media screen and (max-width: 1205px) {
     display: flex;
@@ -66,6 +68,14 @@ const ContainerNavContact = styled(ContainerNav)`
     display: flex;
     justify-content: space-between !important;
     margin-left: 0px;
+  }
+`;
+
+const ImageContact = styled(Image)`
+  height: 130%;
+
+  @media screen and (max-width: 1205px) {
+    display: none;
   }
 `;
 
@@ -136,8 +146,9 @@ export default function Contact(): ReactElement {
             </StyledNavLink>
           </ContainerNavContact>
         </StyledPart1>
-        <Image src="/1.jpg" alt="" />
+        <ImageContact src="/contact.jpg" alt="" />
       </CenteredContent>
+      <ConfidentialLink />
     </Container>
   );
 }

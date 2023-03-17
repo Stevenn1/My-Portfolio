@@ -33,10 +33,24 @@ export const FirstIntro = styled.div`
   display: inline-block;
   max-width: 800px;
   position: absolute;
-  left: 20%;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
 
   @media screen and (max-width: 999px) {
     left: 10%;
+    top: 45%;
+    transform: none;
+  }
+  @media screen and (max-width: 850px) {
+    left: 10%;
+    top: 30%;
+    transform: none;
+  }
+  @media screen and (max-width: 575px) {
+    left: 10%;
+    top: 20%;
+    transform: none;
   }
 `;
 
@@ -75,9 +89,10 @@ export const Title = styled.h1`
     Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   margin-top: 0;
   margin-bottom: 0;
+  text-align: start;
 
   @media screen and (max-width: 679px) {
-    margin-top: 150px;
+    margin-top: 1px;
     display: flex;
     width: 300px;
     font-size: 30px;
@@ -85,10 +100,11 @@ export const Title = styled.h1`
 `;
 
 export const Title2 = styled.h2`
+  text-align: start;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
     Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   color: #ffffff;
-  margin-bottom: 0;
+  margin-bottom: 10px;
 `;
 
 export const Presentation = styled.div`
@@ -108,13 +124,19 @@ export const Presentation = styled.div`
 
   @media screen and (max-width: 679px) {
     display: flex;
-    width: 400px;
+    width: 500px;
     padding-right: 100px;
   }
   @media screen and (max-width: 550px) {
     display: flex;
+    width: 410px;
+    padding-right: 40px;
+    text-align: center;
+  }
+  @media screen and (max-width: 490px) {
+    display: flex;
     width: 300px;
-    padding-right: 100px;
+    padding-right: 40px;
     text-align: center;
   }
 `;
@@ -152,5 +174,10 @@ export const Headband = styled.img`
 
   @media screen and (max-width: 999px) {
     display: block;
+  }
+
+  @media screen and (max-width: 360px) {
+    display: block;
+    height: 30%;
   }
 `;

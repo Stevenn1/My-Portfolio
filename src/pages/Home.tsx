@@ -1,5 +1,6 @@
 import React, { ReactElement, useState, useEffect } from "react";
 import { useLocation } from "react-router-dom";
+import ConfidentialLink from "../components/ConfidentialLink";
 import {
   Container,
   Content,
@@ -83,6 +84,7 @@ export default function Home(): ReactElement {
         </Part1>
         <Image src="/dev2.jpg" alt="" />
       </Content>
+      <ConfidentialLink />
     </Container>
   );
 }

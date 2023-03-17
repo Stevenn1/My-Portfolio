@@ -5,10 +5,10 @@ import {
   Image,
   Title,
   Title2,
-  Headband,
   StyledNavLink,
 } from "../design/DesignHomePage";
 import { Part1, Content } from "../design/DesignMyProjectPage";
+import ConfidentialLink from "../components/ConfidentialLink";
 import styled from "styled-components";
 
 export const handleClick = () => {
@@ -17,6 +17,7 @@ export const handleClick = () => {
 
 export const StyledTitle = styled(Title)`
   font-size: 40px;
+  text-align: center;
 
   @media screen and (max-width: 678px) {
     display: flex;
@@ -28,6 +29,11 @@ export const StyledTitle = styled(Title)`
 
 export const StyledTitle2 = styled(Title2)`
   margin-bottom: 50px;
+  text-align: center;
+`;
+
+const CardTitle2 = styled(Title2)`
+  text-align: center;
 `;
 
 export const ContentCards = styled.div`
@@ -265,7 +271,7 @@ export default function MyProject(): ReactElement {
           <ContentCards>
             <Card>
               <CardHeader src="/dev1.jpg" alt="" />
-              <Title2>Project 1</Title2>
+              <CardTitle2>Project 1</CardTitle2>
               <Description>
                 Lorem, ipsum dolor sit amet consectetur adipisicing elit.
                 Quisquam enim sunt facere fuga tempore voluptatem dolores ipsum.
@@ -279,7 +285,7 @@ export default function MyProject(): ReactElement {
 
             <Card2>
               <CardHeader src="dev3.jpg" alt="" />
-              <Title2>Project 2</Title2>
+              <CardTitle2>Project 2</CardTitle2>
               <Description>
                 Lorem, ipsum dolor sit amet consectetur adipisicing elit.
                 Quisquam enim sunt facere fuga tempore voluptatem dolores ipsum.
@@ -386,6 +392,7 @@ export default function MyProject(): ReactElement {
         </Part1>
         <ImageProjectPage src="/urban.jpg" alt="" />
       </Content>
+      <ConfidentialLink />
     </Container>
   );
 }
