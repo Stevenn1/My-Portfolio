@@ -105,6 +105,13 @@ export const Title = styled.h1`
     width: 300px;
     font-size: 30px;
   }
+
+  @media screen and (max-width: 549px) {
+    padding-left: 50px;
+  }
+  @media screen and (max-width: 490px) {
+    padding-left: 10px !important;
+  }
 `;
 
 export const Title2 = styled.h2`
@@ -144,7 +151,7 @@ export const Presentation = styled.div`
   @media screen and (max-width: 490px) {
     display: flex;
     width: 300px;
-    padding-right: 40px;
+    margin-left: 17px;
     text-align: center;
   }
 `;
