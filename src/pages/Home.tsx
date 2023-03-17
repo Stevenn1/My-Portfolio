@@ -21,8 +21,17 @@ export default function Home(): ReactElement {
   const [loaded, setLoaded] = useState(false);
 
   const [pContent, setPContent] = useState(
-    "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facilis nesciunt commodi quidem repellendus quis porro cumque iusto alias placeat aperiam officiis, quos quod nemo sequi, corrupti, eaque ut doloremque laboriosam. Ipsam, fugit at. Consequuntur sapiente ea quo recusandae impedit voluptatem? Adipisci corporis facilis nesciunt fugit itaque culpa eius rerum cum, ullam obcaecati pariatur. Autem nulla, velit tempore laudantium reiciendis commodi! Earum dicta voluptatum expedita tempora aliquam magni facilis velit deleniti pariatur obcaecati eaque, necessitatibus, optio quibusdam recusandae nisi minus temporibus saepe voluptates mollitia assumenda quasi fuga, ipsam exercitationem eveniet? Vero."
+    `Bienvenue sur mon portfolio de développement web !
+
+Je suis un développeur passionné, spécialisé dans la création de sites web et d'applications en ligne. Ce portfolio est une vitrine de mes compétences et de mes réalisations.
+
+Sur la page "Projets", vous trouverez une sélection de mes travaux les plus récents. J'ai travaillé sur une variété de projets, allant de sites web d'entreprise à des applications web complexes. Chacun de ces projets a été créé avec soin, en utilisant les dernières technologies et les meilleures pratiques de développement.
+
+Si vous souhaitez en savoir plus sur mes compétences ou si vous avez un projet en tête, n'hésitez pas à me contacter en utilisant la page dédiée "Contact". Je suis toujours ravi de discuter de nouveaux projets et de trouver des solutions pour répondre aux besoins de mes clients.
+
+Merci d'avoir pris le temps de visiter mon portfolio. J'espère que vous apprécierez mon travail autant que j'ai apprécié le créer.`
   );
+
   const [titleContent, setTitleContent] = useState(
     "Développeur web & web mobile"
   );
@@ -57,10 +66,29 @@ export default function Home(): ReactElement {
         <Part1>
           <FirstIntro>
             <Title>{titleContent}</Title>
-            <Title2>Steven Michel</Title2>
+
             <Presentation>
-              <p>{pContent}</p>
+              <p>
+                Bienvenue sur mon portfolio de développement web ! <br />
+                <br /> Je suis un développeur passionné, spécialisé dans la
+                création de sites web et d'applications en ligne. Ce portfolio
+                est une vitrine de mes compétences et de mes réalisations. En
+                cliquant sur "découvrez-moi", vous trouverez une sélection de
+                mes travaux les plus récents. J'ai travaillé sur une variété de
+                projets, allant de sites web d'entreprise à des applications web
+                complexes. <br /> Chacun de ces projets a été créé avec soin, en
+                utilisant les dernières technologies et les meilleures pratiques
+                de développement. Si vous souhaitez en savoir plus sur mes
+                compétences ou si vous avez un projet en tête, n'hésitez pas à
+                me contacter en utilisant la page dédiée "Contact". <br /> Je
+                suis toujours ravi de discuter de nouveaux projets et de trouver
+                des solutions pour répondre aux besoins de mes clients. <br />
+                <br /> Merci d'avoir pris le temps de visiter mon portfolio.
+                J'espère que vous apprécierez mon travail autant que j'ai
+                apprécié le créer.
+              </p>{" "}
             </Presentation>
+            <Title2>Steven Michel.</Title2>
             <Arrow className="arrow">
               <svg
                 xmlns="http://www.w3.org/2000/svg"

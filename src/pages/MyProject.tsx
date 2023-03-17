@@ -155,6 +155,7 @@ export const ContainerOutro = styled.div`
     width: 100vw;
     justify-content: space-between;
     margin: auto;
+    margin-bottom: 80px;
   }
 `;
 

@@ -14,6 +14,13 @@ export const Container = styled.div`
   &.loaded {
     opacity: 1;
   }
+
+  @media screen and (max-width: 678px) {
+    min-height: 1200px;
+  }
+  @media screen and (max-width: 489px) {
+    min-height: 1400px;
+  }
 `;
 
 export const Content = styled.div`
@@ -33,6 +40,7 @@ export const FirstIntro = styled.div`
   display: inline-block;
   max-width: 800px;
   position: absolute;
+  margin-top: 50px;
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
@@ -88,11 +96,11 @@ export const Title = styled.h1`
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
     Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   margin-top: 0;
-  margin-bottom: 0;
-  text-align: start;
+  margin-bottom: 30px;
+  text-align: center;
 
   @media screen and (max-width: 679px) {
-    margin-top: 1px;
+    margin-top: 0px;
     display: flex;
     width: 300px;
     font-size: 30px;
@@ -176,8 +184,8 @@ export const Headband = styled.img`
     display: block;
   }
 
-  @media screen and (max-width: 360px) {
+  @media screen and (max-width: 430px) {
     display: block;
-    height: 30%;
+    height: 20%;
   }
 `;

@@ -3,7 +3,9 @@ import { NavLink } from "react-router-dom";
 import styled from "styled-components";
 
 export const ConfidentialRoute = styled(NavLink)`
-  background-color: #191919;
+  background: linear-gradient(180deg, #3a3939 0%, #090808 100%) !important;
+  box-shadow: rgb(17, 17, 17) 0px 48px 100px 0px !important;
+  padding-top: 10px;
   display: flex;
   justify-content: center;
   text-align: center;
@@ -11,7 +13,7 @@ export const ConfidentialRoute = styled(NavLink)`
   text-decoration: none;
 
   &:hover {
-    color: #99e1d9;
+    color: #99e1d9 !important;
   }
 `;
 

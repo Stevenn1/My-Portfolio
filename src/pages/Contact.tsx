@@ -19,7 +19,7 @@ import {
 } from "../pages/MyProject";
 
 export const StyledPart1 = styled(Part1)`
-  margin-top: 350px;
+  margin-top: 200px;
   padding-bottom: 200px;
   height: 100vh;
 
@@ -32,7 +32,6 @@ const CenteredContent = styled(Content)`
   display: flex;
   align-items: center;
   justify-content: center;
-  overflow: auto;
 
   @media screen and (max-width: 1205px) {
     display: flex;
@@ -72,11 +71,18 @@ const ContainerNavContact = styled(ContainerNav)`
 `;
 
 const ImageContact = styled(Image)`
-  height: 130%;
+  height: 100%;
 
   @media screen and (max-width: 1205px) {
     display: none;
   }
+`;
+
+const ConfidentialLinkCustom = styled(ConfidentialLink)`
+  background: linear-gradient(180deg, #ffffff80 0%, #413f3f 100%) !important;
+  box-shadow: rgba(172, 177, 176, 0.378) 0px 48px 100px 0px !important;
+  position: absolute;
+  bottom: 0;
 `;
 
 export default function Contact(): ReactElement {
@@ -148,7 +154,7 @@ export default function Contact(): ReactElement {
         </StyledPart1>
         <ImageContact src="/contact.jpg" alt="" />
       </CenteredContent>
-      <ConfidentialLink />
+      <ConfidentialLinkCustom />
     </Container>
   );
 }
