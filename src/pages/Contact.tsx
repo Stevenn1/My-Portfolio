@@ -1,89 +1,22 @@
 import React, { ReactElement, useState, useEffect } from "react";
-import styled from "styled-components";
 import Form from "../components/Form";
-import ConfidentialLink from "../components/ConfidentialLink";
 import { handleClick } from "./MyProject";
+import { Container, Logo, StyledNavLink } from "../design/DesignHomePage";
 import {
-  Container,
-  Logo,
-  Content,
-  Image,
-  Part1,
-  StyledNavLink,
-} from "../design/DesignHomePage";
-import {
-  ContainerNav,
   ContainerArrowLeft,
   ArrowLeft,
   TextArrow,
-} from "../pages/MyProject";
-
-export const StyledPart1 = styled(Part1)`
-  margin-top: 200px;
-  padding-bottom: 200px;
-  height: 100vh;
-
-  @media screen and (max-width: 1205px) {
-    display: flex;
-  }
-`;
-
-const CenteredContent = styled(Content)`
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
-  @media screen and (max-width: 1205px) {
-    display: flex;
-    flex-direction: column;
-  }
-`;
-
-export const ContainerlogoHome = styled.div`
-  display: flex;
-  margin-right: 225px;
-  fill: #ffffff;
-  transition: transform 0.2s ease-out;
-
-  &:hover {
-    fill: #99e1d9;
-    transform: scale(1.2);
-  }
-
-  @media screen and (max-width: 1205px) {
-    margin: 0 0 0 40px;
-  }
-`;
-
-const ContainerNavContact = styled(ContainerNav)`
-  @media screen and (max-width: 1205px) {
-    width: 340px;
-    display: flex;
-    justify-content: flex-start;
-  }
-
-  @media screen and (max-width: 430px) {
-    width: 200px;
-    display: flex;
-    justify-content: space-between !important;
-    margin-left: 0px;
-  }
-`;
-
-const ImageContact = styled(Image)`
-  height: 100%;
-
-  @media screen and (max-width: 1205px) {
-    display: none;
-  }
-`;
-
-const ConfidentialLinkCustom = styled(ConfidentialLink)`
-  background: linear-gradient(180deg, #ffffff80 0%, #413f3f 100%) !important;
-  box-shadow: rgba(172, 177, 176, 0.378) 0px 48px 100px 0px !important;
-  position: absolute;
-  bottom: 0;
-`;
+} from "../design/DesignMyProjectPage";
+import {
+  CenteredContent,
+  StyledPart1,
+  ConfidentialLinkCustom,
+  ContainerNavContact,
+  ContainerlogoHome,
+  ImageContact,
+} from "../design/DesigneContactPage";
+import { StyledIcon } from "../design/DesignMyProjectPage";
+import { mdiArrowLeft } from "@mdi/js";
 
 export default function Contact(): ReactElement {
   const [loaded, setLoaded] = useState(false);
@@ -100,8 +33,8 @@ export default function Contact(): ReactElement {
 
       <CenteredContent>
         <StyledPart1>
-          <h1>Lorem, ipsum dolor.</h1>
-          <h2>Lorem ipsum dolor sit amet consectetur.</h2>
+          <h1>Réalisons vos projets</h1>
+          <h2>Ensemble, donnons vie à vos idées.</h2>
           <div className="contactPage">
             <h3>Me contacter</h3>
             <div>
@@ -112,15 +45,7 @@ export default function Contact(): ReactElement {
             <StyledNavLink onClick={handleClick} to="/My-Project">
               <ContainerArrowLeft>
                 <ArrowLeft>
-                  <svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
-                    <defs></defs>
-                    <title />
-                    <g id="arrow-left">
-                      <line className="cls-1" x1="3" x2="29" y1="16" y2="16" />
-                      <line className="cls-1" x1="3" x2="7" y1="16" y2="11" />
-                      <line className="cls-1" x1="3" x2="7" y1="16" y2="21" />
-                    </g>
-                  </svg>
+                  <StyledIcon path={mdiArrowLeft} size={1} />
                 </ArrowLeft>
                 <TextArrow>Retour</TextArrow>
               </ContainerArrowLeft>

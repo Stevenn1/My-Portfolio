@@ -1,6 +1,7 @@
 import React, { ReactElement, useState, useEffect } from "react";
 import { useLocation } from "react-router-dom";
 import ConfidentialLink from "../components/ConfidentialLink";
+import { LinkContactIcon } from "../components/ContactIcon";
 import {
   Container,
   Content,
@@ -55,20 +56,21 @@ export default function Home(): ReactElement {
             <Title>{titleContent}</Title>
             <Presentation>
               <p>
-                Bienvenue sur mon portfolio de développement web ! <br />
+                Bienvenue sur mon portfolio ! <br />
                 <br /> Je suis un développeur passionné, spécialisé dans la
                 création de sites web et d'applications en ligne. Ce portfolio
-                est une vitrine de mes compétences et de mes réalisations. En
-                cliquant sur "découvrez-moi", vous trouverez une sélection de
-                mes travaux les plus récents. J'ai travaillé sur une variété de
-                projets, allant de sites web d'entreprise à des applications web
-                complexes. <br /> Chacun de ces projets a été créé avec soin, en
-                utilisant les dernières technologies et les meilleures pratiques
-                de développement. Si vous souhaitez en savoir plus sur mes
+                est une vitrine de mes compétences et de mes réalisations.{" "}
+                <br /> En cliquant sur "découvrez-moi", vous trouverez une
+                sélection de mes travaux les plus récents. J'ai travaillé sur
+                une variété de projets, allant de sites web d'entreprise à des
+                applications web complexes. <br />
+                <br /> Chacun de ces projets a été créé avec soin, en utilisant
+                les dernières technologies et les meilleures pratiques de
+                développement. Si vous souhaitez en savoir plus sur mes
                 compétences ou si vous avez un projet en tête, n'hésitez pas à
-                me contacter en utilisant la page dédiée "Contact". <br /> Je
-                suis toujours ravi de discuter de nouveaux projets et de trouver
-                des solutions pour répondre aux besoins de mes clients. <br />
+                me contacter. <br /> Je suis toujours ravi de discuter de
+                nouveaux projets et de trouver des solutions pour répondre aux
+                besoins de mes clients. <br />
                 <br /> Merci d'avoir pris le temps de visiter mon portfolio.
                 J'espère que vous apprécierez mon travail autant que j'ai
                 apprécié le créer.
@@ -99,6 +101,16 @@ export default function Home(): ReactElement {
         <Image src="/dev2.jpg" alt="" />
       </Content>
       <ConfidentialLink />
+      <LinkContactIcon to="/contact">
+        <svg
+          preserveAspectRatio="xMidYMid"
+          viewBox="0 0 512 512"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <defs></defs>
+          <path d="M256.000,512.000 C114.615,512.000 0.000,397.385 0.000,256.000 C0.000,114.615 114.615,0.000 256.000,0.000 C397.385,0.000 512.000,114.615 512.000,256.000 C512.000,397.385 397.385,512.000 256.000,512.000 ZM108.159,344.493 L191.319,265.831 L108.159,197.002 L108.159,344.493 ZM403.839,147.838 L108.159,147.838 L108.159,177.337 L255.999,305.162 L403.839,177.337 L403.839,147.838 ZM403.839,197.002 L320.679,265.831 L403.839,344.493 L403.839,197.002 ZM311.439,275.663 L255.999,324.827 L200.559,275.663 L108.159,364.158 L403.839,364.158 L311.439,275.663 Z" />
+        </svg>
+      </LinkContactIcon>
     </Container>
   );
 }

@@ -104,6 +104,7 @@ textarea:focus {
 
 input[type="checkbox"] {
   margin-left: 60px;
+  transform: scale(1.5); 
 }
 
 .LayoutRgpd{
@@ -188,11 +189,26 @@ color:transparent;
 }
 }
 
-/* a travailler */
-@media screen and (max-width: 1205px) {
+@media screen and (min-width:620px) and (max-width: 1205px) {
   .LayoutRgpd {
-    width:300px
+    width:500px
   }
 }
 
+@media screen and (max-width: 620px) {
+  input[type="checkbox"] {
+    width: 40px;
+    margin-right: 7px!important;
+    vertical-align: top;
+    margin-top: 6px!important;
+  }
+
+  .LayoutRgpd {
+    width: 300px;
+    display: inline-flex;
+    align-items: flex-start;
+    line-height: 1.5;
+    padding-bottom: 20px;
+  }
+}
 

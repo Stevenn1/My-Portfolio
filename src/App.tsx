@@ -1,4 +1,4 @@
-import React, { ReactElement, useState } from "react";
+import React, { ReactElement } from "react";
 import Home from "./pages/Home";
 import MyProject from "./pages/MyProject";
 import Contact from "./pages/Contact";
