@@ -107,7 +107,7 @@ export const CardHeader = styled.img`
   width: 325px;
   height: 250px;
   max-height: 50%;
-  background-color: blue;
+  background-image: url("/SiteAbdouAvocat.png");
   object-fit: cover;
 `;
 
@@ -274,6 +274,7 @@ export const TextArrow = styled(MyTextProject)`
 `;
 
 export const ImageProjectPage = styled(Image)`
+  background-image: url("/urban.jpg");
   @media screen and (max-width: 1340px) {
     display: none;
   }

@@ -28,7 +28,11 @@ export default function Contact(): ReactElement {
   return (
     <Container className={loaded ? "loaded" : ""}>
       <Logo>
-        <img src="/MS.png" alt="" width="60" />
+        <img
+          src="/MS.png"
+          alt="Logo rond avec les lettres M et S à l'intérieur"
+          width="60"
+        />
       </Logo>
 
       <CenteredContent>
@@ -77,7 +81,10 @@ export default function Contact(): ReactElement {
             </StyledNavLink>
           </ContainerNavContact>
         </StyledPart1>
-        <ImageContact src="/contact.jpg" alt="" />
+        <ImageContact
+          src="/contact.jpg"
+          alt="Personne tapant un message sur un téléphone"
+        />
       </CenteredContent>
       <ConfidentialLinkCustom />
     </Container>

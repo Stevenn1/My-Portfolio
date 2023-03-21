@@ -46,7 +46,11 @@ export default function MyProject(): ReactElement {
   return (
     <Container className={loaded ? "loaded" : ""}>
       <Logo>
-        <img src="/MS.png" alt="" width="60" />
+        <img
+          src="/MS.png"
+          alt="Logo rond avec les lettres M et S à l'intérieur"
+          width="60"
+        />
       </Logo>
       <Content>
         <Part1>
@@ -55,7 +59,7 @@ export default function MyProject(): ReactElement {
 
           <ContentCards>
             <Card>
-              <CardHeader src="/SiteAbdouAvocat.png" alt="" />
+              <CardHeader src="/SiteAbdouAvocat.png" alt="Image d'un site web de cabinet d'avocat" />
               <CardTitle2>Cabinet d'avocat</CardTitle2>
               <Description>
                 Création d'un site web pour un avocat comprenant un blog pour
@@ -72,7 +76,10 @@ export default function MyProject(): ReactElement {
             </Card>
 
             <Card2>
-              <CardHeader src="dev3.jpg" alt="" />
+              <CardHeader
+                src="dev3.jpg"
+                alt="Mise en scène d'un projet de développement web, avec un ordinateur, une tablette, un clavier et un téléphone sur une table."
+              />
               <CardTitle2>Projet en Développement</CardTitle2>
               <Description>
                 En cours de Création... <br /> Disponible Bientôt
@@ -129,7 +136,10 @@ export default function MyProject(): ReactElement {
             </MyTextProject>
           </ContainerOutro>
         </Part1>
-        <ImageProjectPage src="/urban.jpg" alt="" />
+        <ImageProjectPage
+          src="/imagePart2.jpg"
+          alt="Un ordinateur, un feuille blanche et un stylo posés sur une table."
+        />
       </Content>
       <ConfidentialLink />
       <LinkContactIcon2 to="/contact">

@@ -80,6 +80,7 @@ export const Logo = styled.div`
 `;
 
 export const Image = styled.img`
+  background-image: url("/dev2.jpg");
   width: 50%;
   min-height: 100vh;
 
@@ -188,10 +189,12 @@ export const Headband = styled.img`
   display: none;
 
   @media screen and (max-width: 999px) {
+    background-image: url("/ban4.jpg");
     display: block;
   }
 
   @media screen and (max-width: 430px) {
+    background-image: url("/ban4.jpg");
     display: block;
     height: 20%;
   }

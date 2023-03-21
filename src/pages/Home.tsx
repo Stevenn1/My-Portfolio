@@ -47,9 +47,16 @@ export default function Home(): ReactElement {
   return (
     <Container className={loaded ? "loaded" : ""}>
       <Logo>
-        <img src="/MS.png" alt="" width="60" />
+        <img
+          src="/MS.png"
+          alt="Logo rond avec les lettres M et S à l'intérieur"
+          width="60"
+        />
       </Logo>
-      <Headband src="/ban4.jpg" alt=""></Headband>
+      <Headband
+        src="/ban4.jpg"
+        alt="Ordinateur entre-ouvert avec écran allumé"
+      ></Headband>
       <Content>
         <Part1>
           <FirstIntro>
@@ -98,7 +105,10 @@ export default function Home(): ReactElement {
             </Joint>
           </FirstIntro>
         </Part1>
-        <Image src="/dev2.jpg" alt="" />
+        <Image
+          src="/dev2.jpg"
+          alt="Ordinateur entre-ouvert avec écran allumé"
+        />
       </Content>
       <ConfidentialLink />
       <LinkContactIcon to="/contact">
