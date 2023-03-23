@@ -219,7 +219,7 @@ export default function Form() {
           checked={state.contactRgpd}
         />
         <label htmlFor="contactRgpd">
-          J'accèpte la collecte de mes données conformément au règlement général
+          J'accepte la collecte de mes données conformément au règlement général
           sur la protection des données.
         </label>
       </div>

@@ -99,7 +99,7 @@ export default function Home(): ReactElement {
               </svg>
             </Arrow>
             <Joint>
-              <StyledNavLink onClick={handleClick} to="/My-Project">
+              <StyledNavLink onClick={handleClick} to="/mes-projets">
                 Découvrez-moi...
               </StyledNavLink>
             </Joint>

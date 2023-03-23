@@ -46,7 +46,7 @@ export default function Contact(): ReactElement {
             </div>
           </div>
           <ContainerNavContact>
-            <StyledNavLink onClick={handleClick} to="/My-Project">
+            <StyledNavLink onClick={handleClick} to="/mes-projets">
               <ContainerArrowLeft>
                 <ArrowLeft>
                   <StyledIcon path={mdiArrowLeft} size={1} />

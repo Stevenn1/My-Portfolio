@@ -17,7 +17,7 @@ export default function App(): ReactElement {
     <ContainerFirst>
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/My-Project" element={<MyProject />} />
+        <Route path="/mes-projets" element={<MyProject />} />
         <Route path="/contact" element={<Contact />} />
         <Route
           path="/Politique-de-confidentialité"
